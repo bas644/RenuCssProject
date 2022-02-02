@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d6409cd8c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- First Section -->
@@ -19,8 +20,8 @@
             <img class="logo" src="/styles/Ding-Ding-San-Franciscos-Cable-Cars-Are-Running-Again.jpg" alt="Cable Car"> 
             <!-- Navbar links -->
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#phase2">About Us</a></li>
+                <li><a href="#phase3">Contact Us</a></li>
             </ul>
         </nav>
         <!-- Landing page content -->
@@ -29,17 +30,17 @@
             <div class="lndg-pg-btns">
                 <!-- left button -->
                 <div class="land-pg-btn">
-                    <p>Book Your Tour</p>
+                    <p><a href="#phase3">Book Your Tour</a></p>
                 </div>
                 <!-- right button -->
                 <div class="land-pg-btn">
-                    <p>Learn More</p>
+                    <p><a href="#phase2">Learn More</a></p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Second Section -->
-    <div class="phase2">
+    <div class="phase2" id="phase2">
         <h2>Why choose a Big Bus for San Francisco tour?</h2>
         <div class="pics">
             <figure class="audio">
@@ -57,6 +58,28 @@
         </div>
     </div>
     <!-- Third Section -->
-    <!-- Fourth Section -->
+    <div class="phase3" id="phase3">
+        <form action="#">
+            <h2>Book A Big Bus Tour</h2>
+            <p>Enter details below to get started</p><br><br>
+            <label for="email">Enter Your E-mail address</label><br>
+            <input type="email" id="email"><br><br>
+            <label for="phone">Enter Your Phone Number</label><br>
+            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <footer>
+            <p>Travel is intensified living… and one of the last great sources of legal adventure.</p>
+            <div class="social">
+                <i class='fab fa-facebook'></i>
+                <i class='fab fa-twitter-square'></i>
+                <i class='fab fa-github'></i>
+            </div>
+            <div class="copyright">
+                <i class='fas fa-copyright'></i>
+                <p>Copyright 2022</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
